@@ -31,11 +31,15 @@
     padding: 20px 20px 0px;
 }
 
-.first_header {
+.first-header {
     margin-bottom: 20px;
     font-family: LakesBold;
     border-left: 4px solid #41F6D7;
     padding-left: 15px;
+}
+
+.read-more-header {
+    font-size: 16px;
 }
 
 .categories {
@@ -52,6 +56,7 @@
     white-space: nowrap;
     font-size: 14px;
     color: #7E7E82;
+    cursor: pointer;
 }
 
 .list:hover {
@@ -60,22 +65,50 @@
     background-color: white;
 }
 
-.description {
-    padding: 0px 20px 0px;
-    margin-bottom: 20px
+.description-part-one, .description-part-two {
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
-.containermini2 {
+.container-mini-two {
     display: flex;
-    padding: 0px 20px 0px;
+    flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
+}
+
+.container-mini-one {
+    padding: 0px 20px 0px;
 }
 
 .expand {
     order: -1;
 }
 
+.portrait, .portrait-phone-space, .description-part-two {
+    display: none;
+}
+
 @media (min-width: 768px) {
-    
+    .container {
+        width: 768px;
+    }
+
+    .portrait, .portrait-phone-space, .description-part-two {
+        display: flex;
+    }
+
+    .portrait-phone-space {
+        margin-left: 35vh;
+    }
+
+    .container-two {
+        display: flex;
+        padding: 15px 30px 15px;
+        gap: 20px;
+    }
+
+    .container-mini-one {
+        padding: 0px;
+    }
 }
