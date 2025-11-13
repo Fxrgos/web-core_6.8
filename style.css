@@ -24,91 +24,125 @@
 
 }
 
-.navigation {
+.menu {
     display: flex;
     gap: 15px;
     margin-bottom: 30px;
     padding: 20px 20px 0px;
 }
 
-.first-header {
+.option__name {
     margin-bottom: 20px;
     font-family: LakesBold;
     border-left: 4px solid #41F6D7;
     padding-left: 15px;
 }
 
-.read-more-header {
+.box__button {
     font-size: 16px;
 }
 
-.categories {
+.option__categories {
     list-style-type: none;
     display: flex;
-    gap: 20px;
     overflow: auto;
     padding-left: 20px;
     margin-bottom: 20px;
 }
 
-.list {
+.option__list {
     padding: 10px 15px 10px;
     white-space: nowrap;
-    font-size: 14px;
+    font-size: 16px;
     color: #7E7E82;
     cursor: pointer;
 }
 
-.list:hover {
+.option__list:hover {
     border: 3px solid #B8FFEC;
     border-radius: 6px;
     background-color: white;
 }
 
-.description-part-one, .description-part-two {
+.box__description {
     margin-bottom: 10px;
     font-size: 14px;
 }
 
-.container-mini-two {
+.box__container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-.container-mini-one {
+.box {
     padding: 0px 20px 0px;
 }
 
-.expand {
+.box__icon {
     order: -1;
 }
 
-.portrait, .portrait-phone-space, .description-part-two {
+.menu__icon--portrait-visibility, .box__text, .box__text-two, .menu__button {
     display: none;
-}
+} 
 
 @media (min-width: 768px) {
     .container {
         width: 768px;
     }
 
-    .portrait, .portrait-phone-space, .description-part-two {
+    .menu__icon--portrait-visibility, .box__text  {
         display: flex;
     }
 
-    .portrait-phone-space {
+    .menu__icon--space {
         margin-left: 35vh;
     }
 
-    .container-two {
+    .info {
         display: flex;
         padding: 15px 30px 15px;
         gap: 20px;
     }
 
-    .container-mini-one {
+    .box {
         padding: 0px;
     }
+}
+
+@media (min-width: 1120px) {
+
+    .container {
+        width: 1120px;
+        height: 535px;
+        display: flex;
+    }
+ 
+    .menu__icon--portrait-visibility, .menu__icon--desktop-visibility {
+        display: none;
+    }
+
+    .menu, .menu__button {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 0px;
+    }
+
+    .box__text-two {
+        display: contents;
+    }
+
+    .option__categories {
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+    }
+
+    .box__image {
+        width: 531px;
+        height: 300px;
+    }
+
 }
