@@ -17,7 +17,7 @@
 .container {
     width: 320px;
     display: flex;
-    margin: 30px;
+    
     flex-direction: column;
     background-color: #F8F8F8;
     font-family: Lakes;
@@ -88,6 +88,10 @@
     display: none;
 } 
 
+.example__cont {
+        display: none;
+    }
+
 @media (min-width: 768px) {
     .container {
         width: 768px;
@@ -98,7 +102,7 @@
     }
 
     .menu__icon--space {
-        margin-left: 35vh;
+        margin-left: 30vh;
     }
 
     .info {
@@ -109,6 +113,10 @@
 
     .box {
         padding: 0px;
+    }
+
+    .example__cont {
+        display: none;
     }
 }
 
@@ -143,6 +151,24 @@
     .box__image {
         width: 531px;
         height: 300px;
+    }
+
+    header {
+        display: none;
+    }
+
+    .example {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px;
+        align-items: center;
+        
+    }
+
+    .example__cont {
+        display: flex;
+        gap: 15px;
+        padding-right: 20px;
     }
 
 }
